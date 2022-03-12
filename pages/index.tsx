@@ -23,6 +23,7 @@ export default function Home() {
           <title>建設予定地</title>
         </head>
         <Top />
+        
       </div>
     </div>
   );

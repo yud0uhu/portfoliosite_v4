@@ -33,7 +33,7 @@ export default function Works() {
               <div className="py-8 px-8 max-w-md mx-auto bg-white shadow-md space-y-6 sm:(py-4 space-y-0 space-x-6)">
                 <img
                   src={content.productImage.url}
-                  class="box-border h-32 w-32 p-4 border-4 rounded-xl brightness-75"
+                  className="box-border p-4 rounded-xl brightness-75"
                 />
                 <div className="text-center space-y-2 sm:text-left">
                   <div className="space-y-0.1">
