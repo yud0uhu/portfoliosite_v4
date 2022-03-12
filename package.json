@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "license": "UNLICENSED",
     "microcms-js-sdk": "^2.0.0",
     "windicss": "*"
   }
