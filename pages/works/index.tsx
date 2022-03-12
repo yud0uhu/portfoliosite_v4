@@ -1,20 +1,7 @@
 import { useDeno } from "aleph/react";
 import React from "react";
 import { microcmsClient } from "../../lib/microcmsClient.ts";
-
-export type Post = {
-  contents: [
-    {
-      productTitle: string;
-      productData: Date;
-      githubUrl: string;
-      productDatail: string;
-      productComposition: string;
-      productImage: string;
-      productUrl: string;
-    }
-  ];
-};
+import Header from "~/components/Header.tsx";
 
 export default function Works() {
   const version = useDeno(() => Deno.version.deno);
@@ -25,7 +12,12 @@ export default function Works() {
     });
   });
   return (
-    <>
+    <div className="flex flex-wrap">
+    <div className="w-full">
+      <Header />
+      <head>
+        <title>建設予定地</title>
+      </head>
       <div className="grid gap-x-8 gap-y-4 grid-cols-3">
         {articles.contents.map((content) => {
           return (
@@ -66,6 +58,7 @@ export default function Works() {
           );
         })}
       </div>
-    </>
+      </div>
+    </div>
   );
 }
