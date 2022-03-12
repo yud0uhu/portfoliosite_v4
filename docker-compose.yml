@@ -1,0 +1,9 @@
+version: "3"
+services:
+  web:
+    build: .
+    command: "aleph dev"
+    volumes:
+      - .:/app
+    ports:
+      - "8080:8080"
