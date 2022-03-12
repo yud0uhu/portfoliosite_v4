@@ -3,6 +3,7 @@ import React from "react";
 import { useRouter } from "https://deno.land/x/aleph/framework/react/mod.ts";
 import Header from "~/components/Header.tsx";
 import Top from "~/components/Top.tsx";
+import Works from "~/components/Works.tsx";
 export default function Home() {
   const version = useDeno(() => Deno.version.deno);
   const {
@@ -15,6 +16,8 @@ export default function Home() {
     params, // object, should be {slug: 'hello-world'}
     query, // URLSearchParams, `query.get('theme')` should be 'dark'
   } = useRouter();
+
+
   return (
     <div className="flex flex-wrap">
       <div className="w-full">
@@ -22,8 +25,7 @@ export default function Home() {
         <head>
           <title>建設予定地</title>
         </head>
-        <Top />
-        
+          <Top />
       </div>
     </div>
   );

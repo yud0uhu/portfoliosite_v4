@@ -20,14 +20,14 @@ export default function Header() {
             Works
           </a>
         </li>
-        <li>
+        {/* <li>
           <a
             href="/works/slide"
             className="flex justify-center border-b-4 border-transparent hover:text-indigo-600 hover:border-indigo-600 py-4"
           >
             Sliede
           </a>
-        </li>
+        </li> */}
       </ul>
     </>
   );
